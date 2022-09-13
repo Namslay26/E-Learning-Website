@@ -46,7 +46,7 @@ button:hover{
 /*Hero section CSS*/
 #Home{
     
-    background-image: linear-gradient(rgba(245, 245, 220, 0.54), rgba(250, 235, 215, 0.589)),url('./hero.jpg');
+    background-image: linear-gradient(rgba(245, 245, 220, 0.54), rgba(250, 235, 215, 0.589)),url('./images/hero.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -73,4 +73,107 @@ button:hover{
 #Home p{
     font-size: 14px; 
     width: 50%;
+}
+/*Features part*/
+#Features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+/*For the box*/
+#Features .box{
+    background-color: rgb(165, 165, 245);
+    text-align: start;
+    padding: 20px;
+}
+#Features .heading{
+    font-size: 30px;
+}
+#Features .box h3{
+    font-size: 1.2rem;
+    color: rgb(46,46,59);
+    padding: 13px 0 7px 0;
+}
+#Features .box p{
+    color: rgb(46,46,59);
+}
+/*Container*/
+#Features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 30px;
+}
+/*Courses page*/
+#Courses {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#Courses .coursebox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 30px;
+}
+#Courses .courses{
+    text-align: start;
+    background-color: rgb(165, 165, 245);
+    height: 100%;
+    position: relative;
+}
+#Courses .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+#Courses .courses .detail{
+    padding: 15px 15px 0 15px;
+}
+#Courses .courses .detail box-icon{
+    color: yellow;
+}
+#Courses .courses .cost{
+    background-color: blueviolet;
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px
+}
+/*Footer*/
+footer{
+   padding: 8vw ; 
+   background-color: darkblue;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+
+}
+footer .col{
+    padding-bottom: 40px;
+}
+footer h3{
+    color: white;
+    padding-bottom: 20px;
+}
+footer ul li{
+    list-style: none;
+    color: antiquewhite;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+footer ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 10px 0;
+    font-size: 15px;
+}
+footer ul li a:hover{
+    color: aliceblue;
 }
