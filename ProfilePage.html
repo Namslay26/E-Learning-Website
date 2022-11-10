@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profile Page</title>
+  </head>
+
+<style media="screen">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+body{
+  background: url("https://th.bing.com/th/id/OIP.cQ9Nba_1SsKCjc8Pz5weQAHaFO?w=223&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+
+}
+/*Navigation Bar CSS*/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15) ;
+}
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.navbar li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.navbar li a:hover{
+    color: yellow;
+    transition: 0.3s ease;
+}
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+button:hover{
+    background-color: white;
+    transition: 0.3s ease;
+}
+/*Hero section CSS*/
+#Home{
+
+    background-image: linear-gradient(rgba(245, 245, 220, 0.54), rgba(250, 235, 215, 0.589)),url('./hero.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    /*to display in the center*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+#Home a{
+    color: white;
+    text-decoration: none;
+}
+#Home a:hover{
+    color: black;
+    transition: 0.3s ease;
+}
+#Home h1{
+    font-size: 64px;
+}
+#Home p{
+    font-size: 14px;
+    width: 50%;
+  }
+
+#Home .title{
+  text-align: center;
+  text-decoration: underline;
+}
+
+#Home .title:hover{
+  color:yellow;
+}
+
+#Home .content{
+  text-align: center;
+
+}
+
+.leftHome{
+  background-color: rgba(250, 235, 215, 0.589);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:130px;
+  left:70px;
+  width:60vh;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+.rightUpHome{
+  background-color: rgba(250, 235, 215, 0.589);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:130px;
+  left:500px;
+  width:100vh;
+  height:210px;
+  border:2px solid blue;
+  border-radius: 10px;
+}
+
+.rightDownHome{
+  background-color: rgba(250, 235, 215, 0.589);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:400px;
+  left:500px;
+  width:100vh;
+  height:210px;
+  border:2px solid blue;
+  border-radius: 10px;
+}
+
+#profileImg{
+  border-radius: 58px;
+}
+
+#footer{
+  background-color: bisque;
+  height: 90px;
+}
+
+footer{
+   padding: 8vw ;
+   background-color: darkblue;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+
+}
+footer .col{
+    padding-bottom: 40px;
+}
+footer h3{
+    color: white;
+    padding-bottom: 20px;
+}
+footer ul li{
+    list-style: none;
+    color: antiquewhite;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+footer ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 10px 0;
+    font-size: 15px;
+}
+footer ul li a:hover{
+    color: aliceblue;
+}
+
+</style>
+<body>
+  <section id="header">
+      <nav>
+      <a href="vit.ac.in"><img src="./VIT Logo (Black).png" alt="logo" width="150" height="80"></a>
+      <div class="navbar">
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><button class="btn">Sign In</button></li>
+      </ul>
+  </div>
+</nav>
+<!--hero section-->
+    <section id="Home">
+        <!--all the texts-->
+
+        <div class="leftHome">
+            <img id="profileImg" colspan="2" height="200px" width="200px"src="https://tse1.mm.bing.net/th?id=OIP.kWjn9ajj_sRM3xKEmf016AHaJh&pid=Api&P=0" alt="profile-picture">
+              <br>
+              <b><p class="title" style="padding-left:20%">Shaunak Deshmukh</p></b>
+              <p class="uname">shaun@1818</p>
+              <br>
+              <b><p class="title">EDUCATION:</p></b>
+              <p class="content">At vero eos et accu</p>
+              <p class="content">et iusto odio dignissimos ducim</p>
+              <br>
+              <b><p class="title">SKILLS:</p></b>
+              <p class="content">1. abcdef</p>
+              <p class="content">2. ghijkl</p>
+              <p class="content">3. mnopqr</p>
+              <br>
+        </div>
+
+        <div class="rightUpHome">
+            <b><p class="title">COURSES  REGISTERED:</p></b>
+            <br>
+            <p class="content">Course 1: Machine Learning A-Z: Hands-On Python & R In Data Science.</p>
+            <p class="content">Course 2: Microsoft Excel - Excel from Beginner to Advanced.</p>
+            <p class="content">Course 3: The Complete 2022 Web Development Bootcamp</p>
+            <br>
+
+        </div>
+
+        <div class="rightDownHome">
+            <b><p class="title">COURSES COMPLETED:</p></b>
+            <br>
+            <p class="content">Course 4: The Complete JavaScript Course 2022: From Zero to Expert!</p>
+            <p class="content">Course 5: React - The Complete Guide (incl Hooks, React Router, Redux)</p>
+            <p class="content">Course 6: Angular - The Complete Guide (2022 Edition)</p>
+        </div>
+
+      </section>
+</section>
+
+    <section id="footer">
+      <footer>
+      <div class="col">
+               <h3>Features</h3>
+               <ul>
+                   <li><a href="#">Our courses</a></li>
+                   <li><a href="#">New Instructors</a></li>
+                   <li><a href="#">Testimonies</a></li>
+                   <li><a href="#">Demo Classes</a></li>
+               </ul>
+           </div>
+           <div class="col">
+               <h3>For Small Businesses</h3>
+               <ul>
+                   <li><a href="#">Team Classes</a></li>
+                   <li><a href="#">Skills for Businesses</a></li>
+                   <li><a href="#">Staff Training</a></li>
+                   <li><a href="#">Webinars and Seminars</a></li>
+               </ul>
+           </div>
+           <div class="col">
+               <h3>About Us</h3>
+               <ul>
+                   <li><a href="#">Our Story</a></li>
+                   <li><a href="#">Partnerships</a></li>
+                   <li><a href="#">Our Team</a></li>
+                   <li><a href="#">Our Work Culture</a></li>
+               </ul>
+           </div>
+           <div class="col">
+               <h3>Our Newsletter</h3>
+               <p style="color: white">For our exclusive offers!</p>
+               <div class="sub">
+                   <input type="email" placeholder="yourmailgoeshere@gmail.com">
+                   <button>Submit</button>
+               </div>
+           </div>
+           <p style="color: white">Copyright &copy; E-Learning site. All Right Reserved.</p>
+         </footer>
+    </section>
+  </body>
+</html>
