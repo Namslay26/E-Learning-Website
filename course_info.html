@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3c8423677e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylecourse.css" />
+    <link rel="stylesheet" href="styleindex.css" />
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#learnh3").click(function() {
+                $("#learn").slideToggle();
+            })
+        });
+    </script>
 </head>
 <body>
     <nav>
@@ -58,8 +67,8 @@
                 obcaecati aut voluptatum sunt nostrum, nulla deserunt commodi sed facilis molestias consequuntur 
                 exercitationem aperiam! Tenetur neque corrupti accusamus?</p>
             <hr>
-            <h3>What You will Learn</h3>
-            <div class="learn">
+            <h3 id="learnh3">What You will Learn</h3>
+            <div class="learn" id="learn">
                 <p><i class="far fa-check-circle"></i>JS from scratch- beginner to advanced</p>
                 <p><i class="far fa-check-circle"></i>JS from scratch- beginner to advanced</p>
                 <p><i class="far fa-check-circle"></i>JS from scratch- beginner to advanced</p>
@@ -68,15 +77,24 @@
         </div>
         <div class="enroll">
             <h3>This Course Includes:</h3>
-            <p><i class="fas-regular fa-video"></i>52 hours video content</p>
+            <ul style="list-style: circle blue;">
+                <li>52 hours video content</li>
+                <li>75 document content</li>
+                <li>Downloadable resources</li>
+                <li>Lifetime Validity</li>
+                <li>Multi-device access</li>
+                <li>Proctored & graded ts</li>
+                <li>Certificate of completion</li>
+            </ul>
+            <!--<p><i class="fas-regular fa-video"></i>52 hours video content</p>
             <p><i class="far fa-newspaper"></i>75 document content</p>
             <p><i class="far fa-cloud-arrow-down"></i>Downloadable resources</p>
             <p><i class="far-solid fa-infinity"></i>Lifetime Validity</p>
             <p><i class="fa-solid fa-mobile-alt"></i>Multi-device access</p>
             <p><i class="fa-solid fa-paperclip"></i>Proctored & graded ts</p>
-            <p><i class="fa-solid fa-trophy"></i>Certificate of completion</p>
+            <p><i class="fa-solid fa-trophy"></i>Certificate of completion</p>-->
             <div class="enroll-btn">
-                <a class="blue" href="#">Enroll Course</a>
+                <button class="blue" id="enr">Enroll Course</button>
             </div>
         </div>
     </section>
@@ -119,4 +137,5 @@
         <p style="color: white">Copyright &copy; E-Learning site. All Right Reserved.</p>
     </footer>
 </body>
+<script src="course_info.js"></script>
 </html>

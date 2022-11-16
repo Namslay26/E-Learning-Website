@@ -5,30 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <!-- <link rel="stylesheet" href="login.css"> -->
-    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="logreg.css"> 
+    <link rel="stylesheet" href="styleindex.css"> 
 </head>
 <body>
+  <nav>
+    <a href="vit.ac.in"><img src="./VIT Logo (Black).png" alt="logo" width="150" height="80"></a>
+    <div class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><button class="btn">Sign In</button></li>
+    </ul>
+</div>
+</nav>
     <div class="wrapper fadeInDown">
       <div id="formContent">
-        <!-- Tabs Titles -->
-        <!-- Login Form -->
+
         <form onsubmit="return false;">
-          <input type="email" id="email" class="fadeIn second" name="email" placeholder="Email">
-          <input type="text" id="pwd" class="fadeIn third" name="pwd" placeholder="Password">
-          <input type="submit" id="login" class="fadeIn fourth" value="Log In">
+          <input type="text" id="email" class="fadeIn" name="email" placeholder="Email">
+          <input type="password" id="pwd" class="fadeIn" name="pwd" placeholder="Password">
+          <input type="submit" id="login" class="fadeIn" value="Log In">
         </form>
-    
-        <!-- Remind Passowrd -->
+
         <div id="formFooter">
           <a class="underlineHover" href="./register.html">New User? Register Here</a>
         </div>
     
       </div>
     </div>
+    <footer>
+      <div class="col">
+          <h3>Features</h3>
+          <ul>
+              <li><a href="#">Our courses</a></li>
+              <li><a href="#">New Instructors</a></li>
+              <li><a href="#">Testimonies</a></li>
+              <li><a href="#">Demo Classes</a></li>
+          </ul>
+      </div>
+      <div class="col">
+          <h3>For Small Businesses</h3>
+          <ul>
+              <li><a href="#">Team Classes</a></li>
+              <li><a href="#">Skills for Businesses</a></li>
+              <li><a href="#">Staff Training</a></li>
+              <li><a href="#">Webinars and Seminars</a></li>
+          </ul>
+      </div>
+      <div class="col">
+          <h3>About Us</h3>
+          <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Partnerships</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Our Work Culture</a></li>
+          </ul>
+      </div>
+      <div class="col">
+          <h3>Our Newsletter</h3>
+          <p style="color: white">For our exclusive offers!</p>
+          <div class="sub">
+              <input type="email" placeholder="yourmailgoeshere@gmail.com">
+              <button>Submit</button>
+          </div>
+      </div>
+      <p style="color: white">Copyright &copy; E-Learning site. All Right Reserved.</p>
+  </footer>
 </body>
 <script src="./login.js"></script>
 </html>
