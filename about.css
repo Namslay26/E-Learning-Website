@@ -210,7 +210,7 @@ img {
     float: center;
     margin-left: 450px;
     background-color: darkgray;
-    padding-bottom: 20px;
+    text-align: left;
     padding-top: 20px;
 }
 
@@ -219,22 +219,23 @@ form {
     margin: 30px;
 }
 
-#contact-form label {
-    margin-right: 20px;
+#contact-form h1, p {
+    text-align: center;
 }
 
-#contact-form input {
+#contact-form input, select {
     padding: 5px;
     border-radius: 20px;
-}
-
-select {
-    padding: 5px;
-    font-size: 15px;
+    width: 100%;
 }
 
 .input-set {
     margin: 15px;
+    display: flex;
+}
+
+.btns {
+    text-align: center;
 }
 
 p {
@@ -242,14 +243,10 @@ p {
 
 }
 
-#contact-form select {
-    border-radius: 20px;
-}
-
 .bton {
     border-radius: 30px;
     font-size: 15px;
-    padding: 30px;
+    padding: 10px;
     margin: 5px;
     background-color: darkblue;
     color: white;
@@ -267,7 +264,7 @@ p {
 /* Footer */
 
 footer{
-    padding: 8vw ; 
+    padding: 2vw ; 
     background-color: darkblue;
     display: flex;
     justify-content: space-between;
