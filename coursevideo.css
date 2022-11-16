@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15) ;
+}
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.navbar li{
+    list-style-type: none;
+    margin-left: 30px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.navbar li a:hover{
+    color: yellow;
+    transition: 0.3s ease;
+}
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+button:hover{
+    background-color: white;
+    transition: 0.3s ease;
+}
+/*Aside bar*/
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    float: right;
+}
+
+.sidebar{
+    height: 100%;
+    width: 450px;
+    right: 0;
+    padding-top: 60px;
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+.sidebar li{
+    
+}
+ul li{
+    list-style-type: none;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #c39494;
+    display: block;
+    transition: 0.3s;
+}
+ul li:hover{
+    color: #1a0c0c;
+}
+.video{
+    margin: 25px;
+}
+hr{
+    width: 100%;
+}
+
+/*Footer*/
+footer{
+    padding: 3vw ; 
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ 
+ }
+ footer .col{
+     padding-bottom: 40px;
+ }
+ footer h3{
+     color: white;
+     padding-bottom: 20px;
+ }
+ footer ul li{
+     list-style: none;
+     color: antiquewhite;
+     padding: 10px 0;
+     font-size: 15px;
+     cursor: pointer;
+ }
+ footer ul li a{
+     text-decoration: none;
+     color: antiquewhite;
+     padding: 10px 0;
+     font-size: 15px;
+ }
+ footer ul li a:hover{
+     color: aliceblue;
+ }

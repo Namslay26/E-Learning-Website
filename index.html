@@ -3,26 +3,30 @@
         <title>E-Learning Site</title>
         <link rel="stylesheet" href="styleindex.css">
         <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            </head>
     </head>
     <body>
+        <script src="./index.js"></script>
         <!--navbar-->
         <nav>
                 <a href="vit.ac.in"><img src="./images/VIT Logo (Black).png" alt="logo" width="150" height="80"></a>
                 <div class="navbar">
                 <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="#Courses">Courses</a></li>
-                    <li><button class="btn">Sign In</button></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./profile.html">Profile</a></li>
+                    <li><button class="btn" href="./register.html">Sign In</button></li>
                 </ul>
             </div>
         </nav>
         <!--hero section-->
         <section id="Home">
             <!--all the texts-->
-                <h1>Grow everyday with STCS!</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga perspiciatis unde aut quos mollitia consequatur rem laborum a temporibus, molestiae, earum numquam dolor consectetur, distinctio nulla cupiditate suscipit optio fugiat.</p>
+                <h1 id="mainheading">Grow everyday with STCS!</h1>
+                <p id="mainparagraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga perspiciatis unde aut quos mollitia consequatur rem laborum a temporibus, molestiae, earum numquam dolor consectetur, distinctio nulla cupiditate suscipit optio fugiat.</p>
                 <br>
                 <div class="btn">
                     <button><a href="#Features">Read More!</a></button>
@@ -55,9 +59,11 @@
         <!--Our courses-->
         <section id="Courses">
             <h1>Our Popular Courses</h1>
+            <p>Our highly rated courses</p>
             <div class="coursebox">
                 <div class="courses">
-                    <img src="./images/mlimage.jpg" alt="ml">
+
+                    <a href="./course_info.html"><img src="./images/mlimage.jpg" alt="ml"></a>
                 <div class="detail">
                     <span>Updated 24/08/2022</span>
                     <h3>Python for Beginners</h3>
