@@ -30,14 +30,5 @@
             $jsonAnswer = array('name' => $name,'phone' => $phone,'clg' => $clg,'deg' => $deg,"reg" => $reg,'comp' => $comp);
             echo json_encode($jsonAnswer);
 		}	
-	}
-	
-// if($num>0)
-// {
-//     $status="userExists";
-// 	$exists="Username not available";
-//     header( "Content-type: application/json" );
-//     $jsonAnswer = array('status' => $status,'email' => $email,'name' => $name,'phone' => $phone,'clg' => $clg,'deg' => $deg);
-//     echo json_encode($jsonAnswer);
-// }   
+	}  
 ?>

@@ -1,6 +1,4 @@
 sub=document.getElementById("submit")
-mail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3}$)/gi
-mob=/^+?[0-9]{10}/gi
 var data
 
 function submitForm() {
@@ -10,46 +8,24 @@ function submitForm() {
 	edu=document.getElementById("studying").value;
 	dom=document.getElementById("domain").value;
 
-	if(validate())
-	{
-		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			data = JSON.parse(xhttp.responseText);
-			showData();
-			}};
-		xhttp.open("POST", "about.php", true);
-		xhttp.send(JSON.stringify({ email : email, name : name, phone : phone, edu : edu, dom : dom }));
-	}
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		data = JSON.parse(xhttp.responseText);
+		showData();
+		}};
+	xhttp.open("POST", "about.php", true);
+	xhttp.send(JSON.stringify({ email : email, name : name, phone : phone, edu : edu, dom : dom }));
 }
 
-function validate() {
-	if(mail.test(email))
-    {
-		if(mob.test(phone))
-		{
-			return true
-		}
-		else
-		{
-			alert("Please enter a valid phone number")
-			return false
-		}
-    }
-	else
-	{
-		alert("Please enter a valid mail ID")
-		return false
-	}
-}
 
 function showData() {
 	console.log(data);
 	if(data.status=="success")
 	{
-		alert("Account Created Successfully!")
+		alert("Yay we got your info! You'll be hearing from us in no time.")
 	}
-	else if(data.status=="userExists"){alert("We already have your information!")}
+	else if(data.status=="userExists"){alert("We already have your information! Please patiently await a response")}
 }
 
 sub.addEventListener("click",submitForm)
