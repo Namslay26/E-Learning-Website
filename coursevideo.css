@@ -78,3 +78,37 @@ ul li:hover{
 hr{
     width: 100%;
 }
+
+/*Footer*/
+footer{
+    padding: 3vw ; 
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+ 
+ }
+ footer .col{
+     padding-bottom: 40px;
+ }
+ footer h3{
+     color: white;
+     padding-bottom: 20px;
+ }
+ footer ul li{
+     list-style: none;
+     color: antiquewhite;
+     padding: 10px 0;
+     font-size: 15px;
+     cursor: pointer;
+ }
+ footer ul li a{
+     text-decoration: none;
+     color: antiquewhite;
+     padding: 10px 0;
+     font-size: 15px;
+ }
+ footer ul li a:hover{
+     color: aliceblue;
+ }

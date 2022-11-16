@@ -3,6 +3,7 @@
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 /*Navigation Bar CSS*/
 nav{
