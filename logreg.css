@@ -13,7 +13,7 @@ html {
   
   a {
     color: blue;
-    display:inline-block;
+    /* display:inline-block; */
     text-decoration: none;
     font-weight: 400;
   }
@@ -229,25 +229,17 @@ html {
   *:focus {
       outline: none;
   } 
-  
-  #icon {
-    width:60%;
-  }
-  
-footer{
-  line-height: 0.5rem;
-}
 
-footer ul li a{
+#formFooter ul li a{
     text-decoration: none;
     color: antiquewhite;
     padding: 10px 0;
     font-size: 15px;
 }
-footer ul li a:hover{
+#formFooter ul li a:hover{
     color: aliceblue;
 }
 
-footer input[type=email]{
+#formFooter input[type=email]{
   margin: 5px;
 }

@@ -10,6 +10,7 @@
     $dom=$data->dom;
     $status;
 
+
 	$sql = "Select * from contact where Email='$email'";	
 	$result = mysqli_query($conn, $sql);
 	$num = mysqli_num_rows($result);

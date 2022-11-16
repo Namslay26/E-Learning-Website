@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="about.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script>
+        mail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3}$)/gi
+        mob=/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
         $(document).ready(function(){
             $("#heading").click(function() {
                 $("#container").fadeToggle("slow");
@@ -15,27 +17,27 @@
             $("#submit").click(function() {
                 if (document.getElementById("name").value=="")
                 {
-                    alert("Pls enter your name!");
+                    alert("Please enter your name!");
                     return false;
                 }
-                else if (document.getElementById("phone").value=="")
+                else if (document.getElementById("phone").value=="" || !mob.test(document.getElementById("phone").value))
                 {
-                    alert("Pls enter your phone number!");
+                    alert("Please enter a valid phone number!");
                     return false;
                 }
-                else if (document.getElementById("email").value=="")
+                else if (document.getElementById("email").value=="" || !mail.test(document.getElementById("email").value))
                 {
-                    alert("Pls enter your email ID!");
+                    alert("Please enter a valid email ID!");
                     return false;
                 }
                 else if (document.getElementById("studying").selectedIndex==0)
                 {
-                    alert("Pls choose your current education level!");
+                    alert("Please choose your current education level!");
                     return false;
                 }
                 else if (document.getElementById("domain").selectedIndex==0)
                 {
-                    alert("Pls choose your domain of interest!");
+                    alert("Please choose your domain of interest!");
                     return false;
                 }
                 else
@@ -50,14 +52,16 @@
 
     <!--Navbar-->
     <nav>
-        <a href="vit.ac.in"><img src="./VIT Logo (Black) (1).png" alt="logo" width="150" height="80"></a>
+        <a href="vit.ac.in"><img src="./images/VIT Logo (Black).png" alt="logo" width="150" height="80"></a>
         <div class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><button class="btn">Sign In</button></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><button class="btn"><a href="login.html" style="text-decoration: none; color: white;padding: 10px;"
+                onmouseout="this.style.color='white'" onmouseover="this.style.color='blue'">
+                Sign In</a></button></li>
             </ul>
         </div>
     </nav>
@@ -132,7 +136,7 @@
         </div>
     </section>
 
-    <section id="contact-form">
+    <section id="contact-form"><a id="cont"></a>
         <div class="contact">
             <h1>Want to know more about us? Contact us!</h1>
             <form action="" name="contactform" id="contactform" onsubmit="return false">
@@ -143,23 +147,23 @@
                 <input type="text" name="phone" placeholder="Phone No" id="phone"><br>
             </div>
             <div class="input-set">
-                <input type="email" name="email" placeholder="Email ID" id="email"><br>
+                <input type="text" name="email" placeholder="Email ID" id="email"><br>
             </div>
             <div class="input-set">
                 <select name="studying" id="studying">
                     <option value="">Currently Studying:</option>
-                    <option value="">High School</option>
-                    <option value="">Undergraduate</option>
-                    <option value="">Postgraduate</option>
+                    <option value="High School">High School</option>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Postgraduate">Postgraduate</option>
                 </select><br>
             </div>
             <div class="input-set">
                 <select name="domain" id="domain">
                     <option value="">Interested Domain:</option>
-                    <option value="">Machine Learning</option>
-                    <option value="">Full Stack Development</option>
-                    <option value="">Cybersecurity</option>
-                    <option value="">Object Oriented Programming</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Full Stack Development">Full Stack Development</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Object Oriented Programming">Object Oriented Programming</option>
                 </select><br>
             </div>
             <div class="btns">
@@ -209,6 +213,6 @@
         </div>
         <p style="color: white">Copyright &copy; E-Learning site. All Right Reserved.</p>
     </footer>
-
 </body>
+<script src="about.js"></script>
 </html>

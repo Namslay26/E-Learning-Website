@@ -31,6 +31,22 @@ nav{
     color: yellow;
     transition: 0.3s ease;
 }
+#myProgress {
+    width: 50%;
+    background-color: bisque;
+    border-radius: 30px;
+  }
+  
+  #myBar {
+    width: 0%;
+    height: 20px;
+    background-color: blue;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: inherit;
+    
+  }
 button{
     background-color: blue;
     color: white;
@@ -57,9 +73,7 @@ button:hover{
     background-color: antiquewhite;
     font-size: 20px;
 }
-.sidebar li{
-    
-}
+
 ul li{
     list-style-type: none;
     padding: 8px 8px 8px 32px;

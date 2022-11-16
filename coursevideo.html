@@ -4,20 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleindex.css">
     <link rel="stylesheet" href="coursevideo.css">
+   
     <title>Course Video</title>
+    <script>
+        var i = 0;
+
+function move() {
+    var count=0;
+
+    var array = document.getElementsByClassName('mod');
+    for(let i=0;i<8;i++) {
+        if(array[i].checked)
+            count++;
+    }
+     console.log(count);
+
+if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 0;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= count/8*100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+
+    </script>
 </head>
 <body>
     <!--Navbar-->
     <nav>
-        <a href="vit.ac.in"><img src="./VIT Logo (Black).png" alt="logo" width="150" height="80"></a>
+        <a href="vit.ac.in"><img src="./images/VIT Logo (Black).png" alt="logo" width="150" height="80"></a>
         <div class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><button class="btn">Sign In</button></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html#cont">Contact</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li><button class="btn"><a href="login.html" style="text-decoration: none; color: white;padding: 10px;"
+            onmouseout="this.style.color='white'" onmouseover="this.style.color='blue'">
+            Sign In</a></button></li>
         </ul>
     </div>
     </nav>
@@ -31,51 +67,23 @@
 
     <!--Course Links-->
     <div class="container">
-            <ul class="sidebar">
+            <ul class="sidebar" style="padding: 20px;">
                 <form action="">
-                    <li><input type="checkbox" name="moduledone" id="intro" value="intro">Introduction
-                        <ul>
-                            <li>Video #1</li>
-                            <li>Video #2</li>
-                            <li>Video #3</li>
-                            <li>Video #4</li>
-                        </ul>
-                    </li>
+                    <li><input type="checkbox" name="moduledone" class="mod" value="intro">Introduction</li>
                     <hr>
-                    <li><input type="checkbox" name="moduledone" id="intro" value="1">Course Item 1
-                        <ul>
-                            <li>Video #1</li>
-                            <li>Video #2</li>
-                            <li>Video #3</li>
-                            <li>Video #4</li>
-                        </ul>
-                    </li>
+                    <li><input type="checkbox" name="moduledone" class="mod" value="1">Course Item 1</li>
                     <hr>
-                    <li><input type="checkbox" name="moduledone" id="intro" value="2">Course Item 2
-                        <ul>
-                            <li>Video #1</li>
-                            <li>Video #2</li>
-                            <li>Video #3</li>
-                            <li>Video #4</li>
-                        </ul></li>
+                    <li><input type="checkbox" name="moduledone" class="mod" value="2">Course Item 2</li>
                     <hr>
-                    <li><input type="checkbox" name="moduledone" id="intro" value="3">Course Item 3
-                        <ul>
-                            <li>Video #1</li>
-                            <li>Video #2</li>
-                        </ul></li>
-                    </li>                    
-                    <li><input type="checkbox" name="moduledone" id="intro" value="4">Course Item 4 
-                    </li>
+                    <li><input type="checkbox" name="moduledone" class="mod" value="3">Course Item 3</li>
+                    <hr>                    
+                    <li><input type="checkbox" name="moduledone" class="mod" value="4">Course Item 4</li>
                     <hr>
-                    <li><input type="checkbox" name="moduledone" id="intro" value="5">Course Item 5
-                    </li>
+                    <li><input type="checkbox" name="moduledone" class="mod" value="5">Course Item 5</li>
                     <hr>
-                    <li><input type="checkbox" name="moduledone" id="intro" value="6">Course Item 6
-                    </li>
+                    <li><input type="checkbox" name="moduledone" class="mod" value="6">Course Item 6</li>
                     <hr>
-                    <li><input type="checkbox" name="moduledone" id="intro" value="7">Course Item 
-                </li>
+                    <li><input type="checkbox" name="moduledone" class="mod" value="7" onclick="courseComplete()">Course Item 7</li>
                     <hr>
                 </form>
             </ul>
@@ -85,6 +93,10 @@
 
     <!--Text content of the page-->
     <h1 style="margin:25px">Introduction to Cyber Security</h1>
+    <div id="myProgress">
+        <div id="myBar">0%</div>
+      </div>
+      <button onclick="move()" style="margin: 10px;">Check your Progress!</button><br>
     <p style="margin:25px; color:#858282">Class Taken by Shaunak Ravi Deshmukh</p>
     <p style="margin:25px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quaerat cumque reprehenderit cum voluptates, incidunt corporis beatae qui itaque, distinctio sit ad voluptas accusamus quo velit voluptatum praesentium ipsam tempore!</p>
     <p style="margin:25px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quaerat cumque reprehenderit cum voluptates, incidunt corporis beatae qui itaque, distinctio sit ad voluptas accusamus quo velit voluptatum praesentium ipsam tempore!</p> <p style="margin:25px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quaerat cumque reprehenderit cum voluptates, incidunt corporis beatae qui itaque, distinctio sit ad voluptas accusamus quo velit voluptatum praesentium ipsam tempore!</p>
@@ -130,4 +142,5 @@
         <p style="color: white">Copyright &copy; E-Learning site. All Right Reserved.</p>
     </footer>
 </body>
+<script src="coursevideo.js"></script>
 </html>
