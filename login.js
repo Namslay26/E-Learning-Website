@@ -1,10 +1,14 @@
 btn=document.getElementById("login")
-
+mail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3}$)/gi
 var data={}
 
 function login()
 {
     email=document.getElementById("email").value
+    if(!mail.test(email))
+    {
+        alert("please enter a valid mail ID");
+    }
     pwd=document.getElementById("pwd").value
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {

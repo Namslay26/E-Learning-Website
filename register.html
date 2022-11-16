@@ -1,106 +1,88 @@
-<!doctype html>
-	
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-	
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content=
-		"width=device-width, initial-scale=1,
-		shrink-to-fit=no">
-	
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href=
-"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		integrity=
-"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-		crossorigin="anonymous"> 
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+	<link rel="stylesheet" href="./logreg.css">
+	<link rel="stylesheet" href="./styleindex.css">
 </head>
-	
 <body>
-		
-<div class="container my-4 ">
-	
-	<h1 class="text-center">Signup Here</h1>
-	<form action="" method="post" onsubmit="return false">
-		
-		<div class="form-group">
-			<label for="email">Email</label>
-			<input type="email" class="form-control"
-			id="email" name="email">
-		</div>
-	
-		<div class="form-group">
-			<label for="name">Username</label>
-			<input type="text" class="form-control" id="name"
-			name="name" aria-describedby="emailHelp">	
-		</div>
-	
-		<div class="form-group">
-			<label for="pass">Password</label>
-			<input type="password" class="form-control"
-			id="pass" name="pass">
-		</div>
-	
-		<div class="form-group">
-			<label for="cpass">Confirm Password</label>
-			<input type="password" class="form-control"
-				id="cpass" name="cpass">
-	
-			<small id="emailHelp" class="form-text text-muted">
-			Make sure to type the same password
-			</small>
-		</div>	
+	<nav>
+		<a href="vit.ac.in"><img src="./VIT Logo (Black).png" alt="logo" width="150" height="80"></a>
+		<div class="navbar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Courses</a></li>
+			<li><button class="btn">Sign In</button></li>
+		</ul>
+	</div>
+	</nav>
+	<div class="wrapper fadeInDown">
+		<div id="formContent">
+			<form action="" method="post" onsubmit="return false">
+				<input type="text" class="fadeIn" id="email" name="email" placeholder="Email">
+				<input type="text" class="fadeIn" id="name" name="name" aria-describedby="emailHelp" placeholder="Full Name">	
+				<input type="password" class="fadeIn" id="pass" name="pass" placeholder="Password">
+				<input type="password" class="fadeIn" id="cpass" name="cpass" placeholder="Confirm Password">
+				<input type="tel" class="fadeIn" id="phone" name="phone" placeholder="Phone" required>
+				<input type="text" class="fadeIn" id="clg" name="clg" placeholder="College Name" required>
+				<select name="deg" class="fadeIn" id="deg" required>
+					<option value="">Choose Your Branch</option>
+					<option value="BTech">B.Tech.</option>
+					<option value="MBBS">MBBS</option>
+					<option value="BSc">B.Sc.</option>
+				</select>
+				<input type="button" id="sub" value="SignUp">
+			</form>
+			
+			<div id="formFooter">
+				<a class="underlineHover" href="./login.html">Login Now!</a>
+			</div>
 
-		<div class="form-group">
-			<label for="phone">Phone Number</label>
-			<input type="tel" class="form-control"
-			id="phone" name="phone">
 		</div>
-	
-		<div class="form-group">
-			<label for="clg">College Name</label>
-			<input type="text" class="form-control"
-			id="clg" name="clg">
+	</div>
+	<footer>
+		<div class="col">
+			<h3>Features</h3>
+			<ul>
+				<li><a href="#">Our courses</a></li>
+				<li><a href="#">New Instructors</a></li>
+				<li><a href="#">Testimonies</a></li>
+				<li><a href="#">Demo Classes</a></li>
+			</ul>
 		</div>
-
-		<div class="form-group">
-			<label for="deg">Choose Degree Type</label>
-			<select name="deg" class="form-control" id="deg">
-				<option value="">Choose Your Branch</option>
-				<option value="BTech">B.Tech.</option>
-				<option value="MBBS">MBBS</option>
-				<option value="BSc">B.Sc.</option>
-			</select>
+		<div class="col">
+			<h3>For Small Businesses</h3>
+			<ul>
+				<li><a href="#">Team Classes</a></li>
+				<li><a href="#">Skills for Businesses</a></li>
+				<li><a href="#">Staff Training</a></li>
+				<li><a href="#">Webinars and Seminars</a></li>
+			</ul>
 		</div>
-		<button class="btn btn-primary" id="sub">SignUp</button>
-	</form>
-</div>
-	
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	
-<script src="
-https://code.jquery.com/jquery-3.5.1.slim.min.js"
-	integrity="
-sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-	crossorigin="anonymous">
-</script>
-	
-<script src="
-https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-	integrity=
-"sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-	crossorigin="anonymous">
-</script>
-	
-<script src="
-https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-	integrity=
-"sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-	crossorigin="anonymous">
-</script>
+		<div class="col">
+			<h3>About Us</h3>
+			<ul>
+				<li><a href="#">Our Story</a></li>
+				<li><a href="#">Partnerships</a></li>
+				<li><a href="#">Our Team</a></li>
+				<li><a href="#">Our Work Culture</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h3>Our Newsletter</h3>
+			<p style="color: white">For our exclusive offers!</p>
+			<div class="sub">
+				<input type="email" placeholder="yourmailgoeshere@gmail.com">
+				<button>Submit</button>
+			</div>
+		</div>
+		<p style="color: white">Copyright &copy; E-Learning site. All Right Reserved.</p>
+	</footer>
 </body>
 <script src="./register.js"></script>
 </html>

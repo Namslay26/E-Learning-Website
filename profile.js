@@ -17,7 +17,7 @@ function userDisplay()
 function showData() 
 {
     console.log(data);
-
+    
     var uinfo = document.getElementsByClassName("info")
     var reg = document.getElementsByClassName("registered")
     var comp = document.getElementsByClassName("completed")

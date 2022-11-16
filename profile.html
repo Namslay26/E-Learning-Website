@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Profile Page</title>
+    <link rel="stylesheet" href="styleindex.css">
+    <link rel="stylesheet" href="profile.css">
   </head>
-<link rel="stylesheet"  media="screen" href="./profile.css">
 <body onload="userDisplay()">
   <section id="header">
     <nav>
@@ -19,6 +20,7 @@
       </ul>
   </div>
   </nav>
+  </section>
 <!--hero section-->
     <section id="Home">
         <!--all the texts-->
@@ -26,7 +28,7 @@
         <div class="leftHome">
             <img id="profileImg" colspan="2" height="200px" width="200px"src="https://tse1.mm.bing.net/th?id=OIP.kWjn9ajj_sRM3xKEmf016AHaJh&pid=Api&P=0" alt="profile-picture">
               <br>
-              <b><p class="title" style="padding-left:20%">USERNAME:</p></b>
+              <b><p class="title">USERNAME:</p></b>
               <p class="info"></p>
               <br>
               <b><p class="title">EMAIL:</p></b>
@@ -53,9 +55,9 @@
             <b><p class="title">COURSES  REGISTERED:</p></b>
             <br>
             <ul>
-              <li class="registered">Course 1: Machine Learning A-Z: Hands-On Python & R In Data Science.</li>
-              <li class="registered">Course 2: Microsoft Excel - Excel from Beginner to Advanced.</li>
-              <li class="registered">Course 3: The Complete 2022 Web Development Bootcamp</li>
+              <a href=""><li class="registered">Course 1: Machine Learning A-Z: Hands-On Python & R In Data Science.</li></a>
+              <a href=""><li class="registered">Course 2: Microsoft Excel - Excel from Beginner to Advanced.</li></a>
+              <a href=""><li class="registered">Course 3: The Complete 2022 Web Development Bootcamp</li></a>
 
             </ul>
             <br>
@@ -66,18 +68,14 @@
             <b><p class="title">COURSES COMPLETED:</p></b>
             <br>
             <ul>
-              <li class="completed">Course 1: Machine Learning A-Z: Hands-On Python & R In Data Science.</li>
-              <li class="completed">Course 2: Microsoft Excel - Excel from Beginner to Advanced.</li>
-              <li class="completed">Course 3: The Complete 2022 Web Development Bootcamp</li>
+             <a href="course_info.html"><li class="completed">Course 1: Machine Learning A-Z: Hands-On Python & R In Data Science.</li></a>
+             <a href="course_info.html"><li class="completed">Course 2: Microsoft Excel - Excel from Beginner to Advanced.</li></a>
+             <a href="course_info.html"><li class="completed">Course 3: The Complete 2022 Web Development Bootcamp</li></a>
 
             </ul>
         </div>
-
-      </section>
 </section>
-
-    <section id="footer">
-      <footer>
+    <footer>
       <div class="col">
                <h3>Features</h3>
                <ul>
@@ -115,7 +113,7 @@
            </div>
            <p style="color: white">Copyright &copy; E-Learning site. All Right Reserved.</p>
          </footer>
-    </section>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./profile.js"></script>
 </html>
